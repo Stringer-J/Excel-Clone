@@ -59,22 +59,33 @@
     flex: 1;
 }
 
-#firstTextAreaRow {
+#firstTextAreaOnTopRow {
     height: 2.75vh;
     width: 2vw;
     font-size: 20px;
     resize: none;
     margin: 0;
     border-radius: 0%;
+    border-top: none;
+    border-left: none;
+    background-color: rgb(253, 248, 248);
 }
 
-.textarea {
+.textAreaTopRow {
     height: 2.75vh;
     width: 4.083vw;
     font-size: 20px;
     resize: none;
     margin: 0;
-    border-radius: 0%;
+    border-radius: 5px;
+    border: black solid 1px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.textAreaTopRow:focus {
+    border: blue solid 1px;
+    outline: none;
 }
 
 .footer {

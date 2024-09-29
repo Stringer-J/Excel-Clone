@@ -34,7 +34,11 @@ function App() {
       const letter = String.fromCharCode(65 + index);
 
       return (
-        <textarea key={index} className='textarea' placeholder={letter} />
+        <textarea key={index}
+        className='textAreaTopRow'
+        placeholder={letter}
+        readOnly
+        />
       );  
     });
   };
@@ -59,7 +63,7 @@ function App() {
       </div>
 
       <div className='editBody'>
-        <textarea id='firstTextAreaRow'></textarea>
+        <textarea id='firstTextAreaOnTopRow' readOnly></textarea>
         {renderTextAreas()}
       </div>
 
