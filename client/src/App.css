@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .fileBarTop {
     background-color: rgb(8, 113, 148);
     color: aliceblue;
@@ -44,7 +50,37 @@
     height: 100%;
     font-size: 20px;
     color: rgb(38, 166, 209);
-    background-color: white;
+    background-color: rgb(253, 248, 248);
     border: none;
     cursor: pointer;
+}
+
+.editBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+}
+
+.footerTop {
+    background-color: gainsboro;
+    color: aliceblue;
+    width: 100vw;
+    height: 5vh;
+    border-top: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footerBottom {
+    background-color: rgb(253, 248, 248);
+    width: 100vw;
+    height: 3vh;
+    border-top: solid black 1px;
+    position: relative;
 }

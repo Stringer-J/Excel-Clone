@@ -30,19 +30,37 @@ function App() {
 
   return (
     <>
-      <div className='fileBarTop'>
-        <h1>NOT EXCEL</h1>
+      <div className='header'>
+        <div className='fileBarTop'>
+          <h1>NOT EXCEL</h1>
+        </div>
+
+        <div className='fileBarBottom'>
+          <button className={getButtonClass('FileSelection')} onClick={() => handleFileBarClick('FileSelection')}>File</button>
+          <button className={getButtonClass('HomeSelection')} onClick={() => handleFileBarClick('HomeSelection')}>Home</button>
+          <button className={getButtonClass('ViewSelection')} onClick={() => handleFileBarClick('ViewSelection')}>View</button>
+        </div>
       </div>
 
-      <div className='fileBarBottom'>
-        <button className={getButtonClass('FileSelection')} onClick={() => handleFileBarClick('FileSelection')}>File</button>
-        <button className={getButtonClass('HomeSelection')} onClick={() => handleFileBarClick('HomeSelection')}>Home</button>
-        <button className={getButtonClass('ViewSelection')} onClick={() => handleFileBarClick('ViewSelection')}>View</button>
-      </div>
 
       <div className='fileBarSelection'>
         {renderFileBarComponent()}
       </div>
+
+      <div className='editBody'>
+        
+      </div>
+
+      <div className='footer'>
+        <div className='footerTop'>
+
+        </div>
+
+        <div className='footerBottom'>
+  
+        </div>
+      </div>
+
     </>
   );
 };
