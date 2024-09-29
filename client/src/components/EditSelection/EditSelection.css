@@ -1,0 +1,7 @@
+.editBox {
+    background-color: yellow;
+    width: 100vw;
+    height: 12vh;
+    position: relative;
+    border-bottom: solid black 1px;
+}
