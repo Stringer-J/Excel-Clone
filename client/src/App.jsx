@@ -6,6 +6,7 @@ import ViewSelection from './components/ViewSelection/ViewSelection.jsx';
 
 function App() {
   const [selectedFromFileBar, setSelectedFromFileBar] = useState(null);
+  const [editBodyTextAreas, setEditBodyTextAreas] = useState(400);
 
   const handleFileBarClick = (component) => {
     setSelectedFromFileBar(component);
@@ -26,7 +27,13 @@ function App() {
 
   const getButtonClass = (componentName) => {
     return selectedFromFileBar === componentName ? 'activeFileBarButton' : 'fileBarButton';
-  }
+  };
+
+  const renderTextAreas = () => {
+    return Array.from({ length: editBodyTextAreas }, (_, index) => (
+      <textarea key={index} className='textarea' />
+    ));
+  };
 
   return (
     <>
@@ -48,7 +55,7 @@ function App() {
       </div>
 
       <div className='editBody'>
-        
+        {renderTextAreas()}
       </div>
 
       <div className='footer'>
