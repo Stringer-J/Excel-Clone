@@ -6,7 +6,7 @@ function EditSelection() {
   return (
     <>
       <div className='editBox'>
-
+  
       </div>
     </>
   )

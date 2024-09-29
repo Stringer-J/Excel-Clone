@@ -18,8 +18,9 @@
 }
 
 .fileBarButton {
-    width: 5vh;
+    width: 6vh;
     height: 100%;
+    font-size: 20px;
     color: aliceblue;
     background-color: rgb(8, 113, 148);
     border: none;
@@ -28,4 +29,14 @@
 
 .fileBarButton:hover {
     background-color: rgb(38, 166, 209);
+}
+
+.activeFileBarButton {
+    width: 6vh;
+    height: 100%;
+    font-size: 20px;
+    color: rgb(38, 166, 209);
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }

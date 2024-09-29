@@ -6,7 +6,7 @@ function ViewSelection() {
   return (
     <>
       <div className='viewBox'>
-
+      
       </div>
     </>
   )

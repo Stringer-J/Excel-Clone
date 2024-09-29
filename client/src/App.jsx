@@ -24,6 +24,10 @@ function App() {
     }
   };
 
+  const getButtonClass = (componentName) => {
+    return selectedFromFileBar === componentName ? 'activeFileBarButton' : 'fileBarButton';
+  }
+
   return (
     <>
       <div className='fileBarTop'>
@@ -31,9 +35,9 @@ function App() {
       </div>
 
       <div className='fileBarBottom'>
-        <button className='fileBarButton' onClick={() => handleFileBarClick('FileSelection')}>File</button>
-        <button className='fileBarButton' onClick={() => handleFileBarClick('EditSelection')}>Edit</button>
-        <button className='fileBarButton' onClick={() => handleFileBarClick('ViewSelection')}>View</button>
+        <button className={getButtonClass('FileSelection')} onClick={() => handleFileBarClick('FileSelection')}>File</button>
+        <button className={getButtonClass('EditSelection')} onClick={() => handleFileBarClick('EditSelection')}>Edit</button>
+        <button className={getButtonClass('ViewSelection')} onClick={() => handleFileBarClick('ViewSelection')}>View</button>
       </div>
 
       <div className='fileBarSelection'>

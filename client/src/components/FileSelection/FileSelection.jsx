@@ -6,7 +6,7 @@ function FileSelection() {
   return (
     <>
       <div className='fileBox'>
-
+      
       </div>
     </>
   )
