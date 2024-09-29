@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import FileSelection from './components/FileSelection/FileSelection.jsx';
-import EditSelection from './components/EditSelection/EditSelection.jsx';
+import HomeSelection from './components/HomeSelection/HomeSelection.jsx';
 import ViewSelection from './components/ViewSelection/ViewSelection.jsx';
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
     switch (selectedFromFileBar) {
       case 'FileSelection':
         return <FileSelection />;
-      case 'EditSelection':
-        return <EditSelection />;
+      case 'HomeSelection':
+        return <HomeSelection />;
       case 'ViewSelection':
         return <ViewSelection />;
       default:
@@ -36,7 +36,7 @@ function App() {
 
       <div className='fileBarBottom'>
         <button className={getButtonClass('FileSelection')} onClick={() => handleFileBarClick('FileSelection')}>File</button>
-        <button className={getButtonClass('EditSelection')} onClick={() => handleFileBarClick('EditSelection')}>Edit</button>
+        <button className={getButtonClass('HomeSelection')} onClick={() => handleFileBarClick('HomeSelection')}>Home</button>
         <button className={getButtonClass('ViewSelection')} onClick={() => handleFileBarClick('ViewSelection')}>View</button>
       </div>
 
