@@ -6,8 +6,16 @@
 
 .fileBarTop {
     background-color: rgb(8, 113, 148);
+    color: aliceblue;
     width: 100vw;
     height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.fileBarTop h1 {
+    margin-right: 2%;
 }
 
 .fileBarBottom {

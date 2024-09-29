@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <div className='fileBarTop'>
-
+        <h1>NOT EXCEL</h1>
       </div>
 
       <div className='fileBarBottom'>
